@@ -8,6 +8,7 @@ cd ~
 echo ">? Installing basic components?"
 echo "   -  git                         (apt)"
 echo "   -  curl                        (apt)"
+echo "   -  btop                        (apt)"
 echo "   -  vscode                      (snap)"
 echo "   -  gparted                     (apt)"
 echo "   -  telegram                    (snap)"
@@ -16,7 +17,7 @@ echo "   -  gnome-weather               (apt)"
 echo -n "   [y/*]: "
 read basic_flag
 if [ $basic_flag = 'y' ] || [ $basic_flag = 'Y' ]; then
-	sudo apt-get install git-all curl shotwell gnome-weather gparted
+	sudo apt-get install git-all curl shotwell gnome-weather gparted btop
 	sudo snap install code --classic
 	sudo snap install telegram-desktop
 	echo "... done!"
@@ -24,3 +25,4 @@ if [ $basic_flag = 'y' ] || [ $basic_flag = 'Y' ]; then
 	echo ">> Pick your city in gnome-weather, then close it."
 	gnome-weather
 fi
+
