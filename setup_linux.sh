@@ -1,10 +1,11 @@
 #!/bin/bash -e
 # SCRIPT TO PERFORM SOME BASIC INSTALLATIONS IN A FRESH LINUX ENVIRONMENT
 # AUTHOR: lukfre
-# LAST UPDATE: 09/12/2024
-# VERSION: 3.0
-#
-echo ">> UBUNTU FRESH INSTALL SETUP HELPER v3.0 <<"
+# LAST UPDATE: 10/12/2024
+
+VERSION="3.2"
+
+echo ">> UBUNTU FRESH INSTALL SETUP HELPER v$VERSION <<"
 echo ">> Tested on Ubuntu 24.02 64bit w/ kernel Linux 6.8.0-49-generic"
 echo ">> Made w/ <3 by lukfre :]"
 echo ""

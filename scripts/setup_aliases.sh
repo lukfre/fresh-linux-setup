@@ -22,6 +22,15 @@ if [ $aliases_flag = 'y' ] || [ $aliases_flag = 'Y' ]; then
     printf $"\n\techo >> \"Cleaning up space...\"" >> $ALIASES_FILE
     printf $"\n\tsudo apt-get autoremove" >> $ALIASES_FILE
     printf $"\n\tsudo apt-get clean" >> $ALIASES_FILE
-    printf $"\n\techo ">> ... done!"" >> $ALIASES_FILE
+    printf $"\n\techo ... done!" >> $ALIASES_FILE
     printf $"\n}\n\n" >> $ALIASES_FILE
+fi
+
+echo ">? Installing tx for gnome-text-editor ?"
+echo -n "   [y/*]: "
+read tx_flag
+if [ $tx_flag = 'y' ] || [ $tx_flag = 'Y' ]; then
+    echo "# tx - open gnome-text-editor" >> $ALIASES_FILE
+    echo "alias tx=gnome-text-editor" >> $ALIASES_FILE
+    echo "... done!"
 fi
