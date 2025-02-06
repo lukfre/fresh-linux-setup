@@ -13,13 +13,14 @@ echo "   -  vscode                      (snap)"
 echo "   -  gparted                     (apt)"
 echo "   -  telegram                    (snap)"
 echo "   -  shotwell                    (apt)"
+echo "   -  net-tools                   (apt)"
 echo "   -  gnome-weather               (apt)"
 echo -n "   [y/*]: "
 read basic_flag
 if [ $basic_flag = 'y' ] || [ $basic_flag = 'Y' ]; then
-	sudo apt-get install git-all curl shotwell gnome-weather gparted btop
-	sudo snap install code --classic
-	sudo snap install telegram-desktop
+	sudo apt-get install git-all curl shotwell gnome-weather gparted btop net-tools -y
+	sudo snap install code --classic 
+	sudo snap install telegram-desktop 
 	echo "... done!"
 	echo ""
 	echo ">> Pick your city in gnome-weather, then close it."

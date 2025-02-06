@@ -3,7 +3,7 @@
 # AUTHOR: lukfre
 # LAST UPDATE: 10/12/2024
 
-VERSION="3.2"
+VERSION="3.3"
 
 echo ">> UBUNTU FRESH INSTALL SETUP HELPER v$VERSION <<"
 echo ">> Tested on Ubuntu 24.02 64bit w/ kernel Linux 6.8.0-49-generic"
